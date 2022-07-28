@@ -19,10 +19,10 @@ package openstack
 import (
 	"fmt"
 
+	common "github.com/abays/lib-common/pkg/common"
 	"github.com/go-logr/logr"
 	gophercloud "github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/openstack"
-	common "github.com/openstack-k8s-operators/lib-common/pkg/common"
 )
 
 // OpenStack -

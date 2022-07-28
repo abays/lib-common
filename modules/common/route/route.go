@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/abays/lib-common/common/helper"
+	"github.com/abays/lib-common/common/util"
 	routev1 "github.com/openshift/api/route/v1"
-	"github.com/openstack-k8s-operators/lib-common/common/helper"
-	"github.com/openstack-k8s-operators/lib-common/common/util"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
 	k8s_errors "k8s.io/apimachinery/pkg/api/errors"

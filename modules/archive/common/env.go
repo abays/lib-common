@@ -17,7 +17,7 @@ limitations under the License.
 package common
 
 import (
-	"github.com/openstack-k8s-operators/lib-common/common/env"
+	"github.com/abays/lib-common/common/env"
 
 	corev1 "k8s.io/api/core/v1"
 )

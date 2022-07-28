@@ -17,7 +17,7 @@ limitations under the License.
 package labels
 
 import (
-	"github.com/openstack-k8s-operators/lib-common/common/util"
+	"github.com/abays/lib-common/common/util"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
