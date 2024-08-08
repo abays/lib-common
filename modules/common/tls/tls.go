@@ -162,6 +162,19 @@ func (a *APIService) Enabled(endpt service.Endpoint) bool {
 	return false
 }
 
+// EnabledList - returns a list of enabled endpoints
+func (a *APIService) EnabledList(endpt service.Endpoint) []service.Endpoint {
+	enabledList := []service.Endpoint{}
+
+	for _, endpt := range []service.Endpoint{service.EndpointInternal, service.EndpointPublic} {
+		if a.Enabled(endpt) {
+			enabledList = append(enabledList, endpt)
+		}
+	}
+
+	return enabledList
+}
+
 // ValidateCertSecrets - validates the content of the cert secrets to make sure "tls-ca-bundle.pem" key exists
 func (a *APIService) ValidateCertSecrets(
 	ctx context.Context,
